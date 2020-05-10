@@ -24,14 +24,14 @@
     /// </summary>
     private void InitializeComponent() {
       this.dgvResult = new System.Windows.Forms.DataGridView();
-      this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.statusStrip1 = new System.Windows.Forms.StatusStrip();
       this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
       this.txtUrl = new System.Windows.Forms.TextBox();
       this.btnStart = new System.Windows.Forms.Button();
       this.lblInfo = new System.Windows.Forms.Label();
+      this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
       ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).BeginInit();
       this.flowLayoutPanel1.SuspendLayout();
       this.SuspendLayout();
@@ -51,25 +51,6 @@
       this.dgvResult.RowTemplate.Height = 23;
       this.dgvResult.Size = new System.Drawing.Size(1015, 454);
       this.dgvResult.TabIndex = 3;
-      // 
-      // index
-      // 
-      this.index.DataPropertyName = "Index";
-      this.index.HeaderText = "序号";
-      this.index.Name = "index";
-      // 
-      // URL
-      // 
-      this.URL.DataPropertyName = "URL";
-      this.URL.HeaderText = "URL";
-      this.URL.Name = "URL";
-      this.URL.Width = 500;
-      // 
-      // status
-      // 
-      this.status.DataPropertyName = "Status";
-      this.status.HeaderText = "状态";
-      this.status.Name = "status";
       // 
       // statusStrip1
       // 
@@ -97,7 +78,6 @@
       this.txtUrl.Size = new System.Drawing.Size(412, 21);
       this.txtUrl.TabIndex = 4;
       this.txtUrl.Text = "http://www.cnblogs.com/dstang2000/";
-      this.txtUrl.TextChanged += new System.EventHandler(this.txtUrl_TextChanged);
       // 
       // btnStart
       // 
@@ -116,6 +96,25 @@
       this.lblInfo.Name = "lblInfo";
       this.lblInfo.Size = new System.Drawing.Size(0, 12);
       this.lblInfo.TabIndex = 6;
+      // 
+      // index
+      // 
+      this.index.DataPropertyName = "Index";
+      this.index.HeaderText = "任务序号";
+      this.index.Name = "index";
+      // 
+      // URL
+      // 
+      this.URL.DataPropertyName = "URL";
+      this.URL.HeaderText = "URL";
+      this.URL.Name = "URL";
+      this.URL.Width = 500;
+      // 
+      // status
+      // 
+      this.status.DataPropertyName = "Status";
+      this.status.HeaderText = "状态";
+      this.status.Name = "status";
       // 
       // Form1
       // 
@@ -138,14 +137,14 @@
 
     #endregion
     private System.Windows.Forms.DataGridView dgvResult;
-    private System.Windows.Forms.DataGridViewTextBoxColumn index;
-    private System.Windows.Forms.DataGridViewTextBoxColumn URL;
-    private System.Windows.Forms.DataGridViewTextBoxColumn status;
     private System.Windows.Forms.StatusStrip statusStrip1;
     private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     private System.Windows.Forms.TextBox txtUrl;
     private System.Windows.Forms.Button btnStart;
     private System.Windows.Forms.Label lblInfo;
+    private System.Windows.Forms.DataGridViewTextBoxColumn index;
+    private System.Windows.Forms.DataGridViewTextBoxColumn URL;
+    private System.Windows.Forms.DataGridViewTextBoxColumn status;
   }
 }
 
